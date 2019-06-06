@@ -25,8 +25,8 @@ function backgroundAnimation() {
   app.stage.addChild(displacementSprite);
   app.stage.filters = [displacementFilter];
   app.renderer.view.style.transform = 'scale(1.02)';
-  displacementSprite.scale.x = 4;
-  displacementSprite.scale.y = 4;
+  displacementSprite.scale.x = 6;
+  displacementSprite.scale.y = 6;
   animate();
 }
 
