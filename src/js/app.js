@@ -11,7 +11,6 @@ function backgroundAnimation() {
   const app = new PIXI.Application({
     width: window.innerWidth,
     height: window.innerHeight,
-    resolution: window.devicePixelRatio
   });
   document.body.appendChild(app.view);
   const image = new PIXI.Sprite.from("/images/turtle-hr.jpg");
@@ -24,7 +23,7 @@ function backgroundAnimation() {
   displacementSprite.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT;
   app.stage.addChild(displacementSprite);
   app.stage.filters = [displacementFilter];
-  app.renderer.view.style.transform = 'scale(1.02)';
+  app.renderer.view.style.transform = 'scale(1.0)';
   displacementSprite.scale.x = 6;
   displacementSprite.scale.y = 6;
   animate();
